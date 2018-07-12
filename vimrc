@@ -55,10 +55,15 @@ Plug 'wavded/vim-stylus'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } 
-Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'scrooloose/nerdcommenter'
-cal plug#end()
+Plug 'mattn/emmet-vim'
+Plug 'vimwiki/vimwiki'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'justinmk/vim-sneak'
+Plug 'mileszs/ack.vim'
+Plug 'christoomey/vim-tmux-navigator'
+call plug#end()
 
 colorscheme gruvbox
 set background=dark
