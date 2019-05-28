@@ -49,24 +49,24 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 Plug 'Shougo/vimfiler.vim', { 'on': 'VimFiler' }
-Plug 'pangloss/vim-javascript'
-Plug 'posva/vim-vue'
-Plug 'wavded/vim-stylus'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } 
 Plug 'haya14busa/incsearch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mattn/emmet-vim'
-Plug 'vimwiki/vimwiki'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'justinmk/vim-sneak'
-Plug 'mileszs/ack.vim'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'w0rp/ale'
 call plug#end()
 
-colorscheme gruvbox
+" GruvBox Config
 set background=dark
+let g:gruvbox_sign_column = 'bg0'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_italic = 1
+let g:gruvbox_invert_selection = 0
+let g:gruvbox_plugin_hi_groups = 1
+colorscheme gruvbox
 
 " IndentLine
 let g:indentLine_enabled = 1
@@ -90,15 +90,6 @@ map ` :VimFiler -explorer<CR>
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" Vim Sneak
-let g:sneak#s_next = 1
-nmap f <Plug>Sneak_f
-nmap F <Plug>Sneak_F
-xmap f <Plug>Sneak_f
-xmap F <Plug>Sneak_F
-omap f <Plug>Sneak_f
-omap F <Plug>Sneak_F
 
 " IncSearch
 map / <Plug>(incsearch-forward)

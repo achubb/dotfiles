@@ -115,7 +115,7 @@ alias cd=reminder_cd
 autoload -U promptinit; promptinit
 prompt pure
 # This is just for old PHP
-# export PATH="/usr/local/opt/php@5.6/bin:$PATH"
-# export PATH="/usr/local/opt/php@5.6/sbin:$PATH"
+#export PATH="/usr/local/opt/php@5.6/bin:$PATH"
+#export PATH="/usr/local/opt/php@5.6/sbin:$PATH"
 export PATH="/usr/local/opt/php@7.1/bin:$PATH"
 export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
